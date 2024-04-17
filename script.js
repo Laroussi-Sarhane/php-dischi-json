@@ -4,7 +4,8 @@ createApp({
   data(){
     return{
       title:'dischi da stampare',
-      apiUrl: 'server.php'
+      apiUrl: 'server.php',
+      list: []
     }
   },
 
@@ -13,6 +14,7 @@ createApp({
       axios.get(this.apiUrl)
       .then(result=>{
         console.log(result.data);
+        this.list = result.data;
       })
     }
   },

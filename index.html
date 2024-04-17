@@ -28,8 +28,8 @@
         </div>
         <div>
           <nav class="navbar bg-body-tertiary">
-            <div class="container-fluid">
-              <form class="d-flex" role="search">
+            <div class="">
+              <form class="d-flex m-2 " role="search" >
                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                 <button class="btn btn-outline-success" type="submit">Search</button>
               </form>
@@ -43,13 +43,18 @@
     <main>
       <div class="container ">
         <div class="row ">
-          <div class="row-cols-3 d-flex flex-wrap mt-4  ">
+          <div class=" p-2   d-flex flex-wrap mt-4  ">
 
-            <div class="card" style="width: 18rem;">
-              <img src="https://cdn-p.smehost.net/sites/28d35d54a3c64e2b851790a18a1c4c18/wp-content/uploads/2017/04/19870831_bad_album.jpg" class="card-img-top" alt="...">
+            <div v-for="(item, index) in list"
+                 :key="index"
+             class="card" style="width: 18rem;">
+              <img :src="item.poster" class="card-img-top" alt="...">
               <div class="card-body">
-                <h5 class="card-title">Card title</h5>
-                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <h5 class="card-title"> {{item.title}} </h5>
+                <p class="card-text"> {{item.author}} </p>
+                <p class="card-text"> {{item.year}} </p>
+                <p class="card-text"> {{item.genre}} </p>
+
                 
               </div>
             </div>

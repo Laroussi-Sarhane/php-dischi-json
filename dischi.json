@@ -40,5 +40,19 @@
       "year": 2002,
       "poster": "https://images-na.ssl-images-amazon.com/images/I/81MDAIdh78L._SY355_.jpg",
       "genre": "Rock"
-  }
+  },
+  {
+    "title": "Live at Wembley 86",
+    "author": "Queen",
+    "year": 1992,
+    "poster": "https://www.passionevinile.it/wp-content/uploads/2020/10/bad-vinile-michael-jackson-album.jpg",
+    "genre": "Pop"
+},
+{
+  "title": "bad",
+  "author": "m-j",
+  "year": 1992,
+  "poster": "https://m.media-amazon.com/images/I/81zbdwRKmgL._UF1000,1000_QL80_.jpg",
+  "genre": "Pop"
+}
 ]

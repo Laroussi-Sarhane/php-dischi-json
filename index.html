@@ -43,11 +43,11 @@
     <main>
       <div class="container ">
         <div class="row ">
-          <div class=" p-2   d-flex flex-wrap mt-4  ">
+          <div class=" p-2 row-cols-4 d-flex flex-wrap mt-4  ">
 
             <div v-for="(item, index) in list"
                  :key="index"
-             class="card" style="width: 18rem;">
+             class="card m-2 " style="width: 18rem;">
               <img :src="item.poster" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title"> {{item.title}} </h5>

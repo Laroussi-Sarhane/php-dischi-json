@@ -1,0 +1,15 @@
+header{
+  height: 70px;
+  background-color: #11181E;
+}
+.my_box_img{
+  width: 100px;
+}
+img{
+  width: 70px;
+  background-color:#11181E ;
+}
+main{
+  background-color: #1D2D3C;
+  height: 100vh;
+}

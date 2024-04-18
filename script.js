@@ -5,7 +5,10 @@ createApp({
     return{
       title:'dischi da stampare',
       apiUrl: 'server.php',
-      list: []
+      list: [],
+      newdisco:{
+        title: '',
+      }
     }
   },
 
@@ -16,7 +19,12 @@ createApp({
         console.log(result.data);
         this.list = result.data;
       })
+    },
+
+    addNewDisco(){
+      
     }
+
   },
 
   mounted(){
